@@ -1,4 +1,4 @@
 Haskzilla
 ---------
 
-A haskell webbrowser.
+A web browser written in haskell.
