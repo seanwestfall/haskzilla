@@ -1,0 +1,4 @@
+Haskzilla
+---------
+
+A haskell webbrowser.
