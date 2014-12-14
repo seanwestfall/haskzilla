@@ -1,7 +1,7 @@
 Haskzilla
 ---------
 
-A toy web browser written in haskell.
+A toy web browser written in Haskell.
 
 Credits:
 
