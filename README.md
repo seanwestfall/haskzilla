@@ -33,6 +33,7 @@ The following HTML,
 </html>
 ```
 will form the parse tree:
+
 ![parse tree](https://github.com/seanwestfall/haskzilla/blob/master/parse_tree.png)
 
 As you can see from above, there are basically two type of tokens the HTML parser has to parser through: (1) markup tags, and (2) text-- and within the markup tags: open tags, closing tags, and attributes.
@@ -56,7 +57,7 @@ The basic flow of the algorithm is:
 
 The initial state is the "Data state". When the < character is encountered, the state is changed to "Tag open state". Consuming an a-z character causes creation of a "Start tag token", the state is changed to "Tag name state". We stay in this state until the > character is consumed. Each character is appended to the new token name. In our case the created token is an html token.
 
-When the > tag is reached, the current token is emitted and the state changes back to the "Data state". The <body> tag will be treated by the same steps. So far the html and body tags were emitted. We are now back at the "Data state". Consuming the H character of Hello world will cause creation and emitting of a character token, this goes on until the < of </body> is reached. We will emit a character token for each character of Hello world.
+When the > tag is reached, the current token is emitted and the state changes back to the "Data state". The \<body\> tag will be treated by the same steps. So far the html and body tags were emitted. We are now back at the "Data state". Consuming the H character of Hello world will cause creation and emitting of a character token, this goes on until the < of <\/body> is reached. We will emit a character token for each character of Hello world.
 
 We are now back at the "Tag open state". Consuming the next input / will cause creation of an end tag token and a move to the "Tag name state". Again we stay in this state until we reach >.Then the new tag token will be emitted and we go back to the "Data state". The <\/html> input will be treated like the previous case.
 
