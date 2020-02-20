@@ -8,7 +8,7 @@ Credits:
 - Let's build a browser engine! by Matt Brubeck [http://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
 - Let's Build a Browser Engine in Haskell by Leif Grele [http://hrothen.github.io/2014/09/05/lets-build-a-browser-engine-in-haskell/](http://hrothen.github.io/2014/09/05/lets-build-a-browser-engine-in-haskell/)
 - The offical W3C HTML5 spec by the W3C [http://www.w3.org/TR/html5/](http://www.w3.org/TR/html5/)
-- Chris Done's Wish -- A trivial web browser written in Haskell [https://github.com/chrisdone/wish](https://github.com/chrisdone/wish)
+- Chris Done's Vado -- A trivial web browser written in Haskell [https://github.com/chrisdone/wish](https://github.com/chrisdone/vado)
 
 ### How a Browser Works
 ![Modzilla Diagram](/image008.jpg)
